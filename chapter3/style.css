@@ -1,0 +1,47 @@
+/* Simple, clean styles for login */
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family:Arial, sans-serif; background:#f0f3f7; min-height:100vh; display:flex; align-items:center; justify-content:center; padding:32px; color:#222; }
+
+.auth-container { background:#fff; width:380px; max-width:100%; padding:34px 36px 40px; border-radius:14px; box-shadow:0 8px 26px rgba(0,0,0,.08); position:relative; }
+.auth-title { margin:0 0 20px; font-size:1.6rem; font-weight:600; text-align:center; color:#1e3a8a; }
+.auth-sub { text-align:center; font-size:.85rem; color:#5b6675; margin:-8px 0 24px; }
+
+.auth-form { display:flex; flex-direction:column; gap:16px; }
+.form-group { display:flex; flex-direction:column; gap:6px; }
+label { font-size:.75rem; font-weight:600; text-transform:uppercase; letter-spacing:.8px; color:#374151; }
+input[type=text], input[type=password] { width:100%; padding:11px 12px; font-size:.95rem; border:1px solid #cbd5e1; border-radius:8px; background:#f9fafb; transition:.2s; }
+input[type=text]:focus, input[type=password]:focus { outline:none; border-color:#1e3a8a; background:#fff; box-shadow:0 0 0 3px rgba(30,58,138,.25); }
+input::placeholder { color:#94a3b8; }
+
+.btn-primary { background:#1e3a8a; color:#fff; border:none; padding:12px 18px; font-size:.95rem; font-weight:600; border-radius:8px; cursor:pointer; transition:.25s; letter-spacing:.4px; }
+.btn-primary:hover { background:#1a336f; }
+.btn-primary:active { background:#162a59; }
+.btn-primary:focus-visible { outline:none; box-shadow:0 0 0 3px rgba(30,58,138,.35); }
+
+.footer-note { margin-top:26px; font-size:.65rem; text-align:center; color:#94a3b8; }
+
+/* Decorative circles kept minimal */
+.decor-circle { position:absolute; border-radius:50%; background:radial-gradient(circle at 30% 30%, #ffffff, #dbe7f5); opacity:.4; }
+.decor-circle.c1 { width:90px; height:90px; top:-25px; right:-25px; }
+.decor-circle.c2 { width:60px; height:60px; bottom:-20px; left:-20px; }
+
+/* ===== Welcome Page ===== */
+.welcome-body { font-family:Arial, sans-serif; background:#f0f3f7; min-height:100vh; display:flex; align-items:center; justify-content:center; padding:32px; }
+.welcome-container { background:#fff; width:520px; max-width:100%; padding:42px 46px 48px; border-radius:16px; box-shadow:0 10px 30px rgba(0,0,0,.07); position:relative; }
+.welcome-title { margin:0 0 18px; font-size:1.9rem; font-weight:600; letter-spacing:.6px; color:#1e3a8a; }
+.welcome-text { margin:0 0 26px; font-size:1rem; line-height:1.5; color:#444; }
+.btn-secondary { display:inline-block; text-decoration:none; background:#e2e8f0; color:#1f2937; padding:11px 18px; border-radius:8px; font-size:.9rem; font-weight:600; letter-spacing:.4px; transition:.25s; }
+.btn-secondary:hover { background:#d1d9e1; }
+.btn-secondary:active { background:#c3ccd5; }
+.btn-secondary:focus-visible { outline:none; box-shadow:0 0 0 3px rgba(30,58,138,.3); }
+
+@media (max-width:560px) {
+	.welcome-container { width:100%; padding:34px 30px 40px; }
+	.welcome-title { font-size:1.6rem; }
+}
+
+@media (max-width:480px) {
+	body { padding:20px; }
+	.auth-container { width:100%; padding:28px 26px 34px; }
+	.auth-title { font-size:1.4rem; }
+}

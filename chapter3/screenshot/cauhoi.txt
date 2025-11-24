@@ -1,0 +1,1 @@
+Câu hỏi của tôi:Tại sao hàm session_start() bắt buộc phải được gọi ở cả handle_login.php và welcome.php, trong khi session đã được tạo từ lúc đăng nhập? Điều gì sẽ xảy ra nếu quên gọi session_start() ở file welcome.php?
