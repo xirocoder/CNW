@@ -1,0 +1,1 @@
+Khi sử dụng PDO trong PHP, điều gì sẽ xảy ra nếu chúng ta không dùng Prepared Statement mà nối trực tiếp biến người dùng nhập vào vào câu lệnh SQL (ví dụ: "... WHERE email = '$email'")? Vì sao cơ chế prepare() và execute([$email]) của PDO lại giúp chống SQL Injection hiệu quả hơn?
