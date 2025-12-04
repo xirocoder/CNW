@@ -1,0 +1,1 @@
+câu hỏi phản biện: Trong kiến trúc MVC, Controller luôn phải ‘ra lệnh’ cho Model để lấy dữ liệu, sau đó truyền dữ liệu sang View để hiển thị. Vậy nếu chúng ta cho phép View tự truy vấn CSDL (SELECT * FROM sinhvien) mà không thông qua Controller, điều gì sẽ xảy ra? Tại sao việc tách biệt vai trò này lại quan trọng trong một ứng dụng lớn như Laravel?
