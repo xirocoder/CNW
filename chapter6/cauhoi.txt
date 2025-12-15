@@ -1,0 +1,1 @@
+Tại sao trong Laravel, hệ thống lại tách riêng phần định tuyến (routes/web.php) và phần xử lý logic (Controller)? Việc tách biệt này mang lại lợi ích gì cho việc bảo trì và mở rộng ứng dụng web so với cách viết xử lý trực tiếp trong một file PHP duy nhất?
